@@ -75,6 +75,11 @@ def get_reply_markup(username, query):
     buttons = [[
         InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
         InlineKeyboardButton('Share bot', url=url),
+    ],]
+        InlineKeyboardButton('👥 Official Group 👥', url='https://t.me/mmovie_world_Group')
+        InlineKeyboardButton('🔗 MMovie World Links 🔗', url="https://t.me/mmovieworldlinks")
+    ],]
+        InlineKeyboardButton('➕ Request Movie ➕', url="https://t.me/Contact_MMovie_World_Bot")
     ]]
     return InlineKeyboardMarkup(buttons)
 
