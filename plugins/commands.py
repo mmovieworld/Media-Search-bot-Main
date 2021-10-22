@@ -17,7 +17,12 @@ async def start(bot, message):
         buttons = [[
             InlineKeyboardButton('Search Here', switch_inline_query_current_chat=''),
             InlineKeyboardButton('Go Inline', switch_inline_query=''),
-        ]]
+        ],]
+        InlineKeyboardButton('👥Official Group👥', url='https://t.me/mmovie_world_Group')
+        InlineKeyboardButton('🔗MMovie World Links🔗', url="https://t.me/mmovieworldlinks")
+    ],]
+        InlineKeyboardButton('➕Request Movie➕', url="https://t.me/Contact_MMovie_World_Bot")
+    ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(START_MSG, reply_markup=reply_markup)
 
