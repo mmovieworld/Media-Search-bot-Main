@@ -20,7 +20,7 @@ async def start(bot, message):
             InlineKeyboardButton('Go Inline 🦈', switch_inline_query=''),
         ],[
         InlineKeyboardButton('Join Group 👥', url='https://t.me/mmovie_world_Group'),
-        InlineKeyboardButton('Join Channel 📡 ', url='https://t.me/mmovie_world),
+        InlineKeyboardButton('Join Channel 📡 ', url='https://t.me/mmovie_world'),
         ],[
         InlineKeyboardButton('⭕ Our other Services ⭕', url='https://t.me/mmovieworldlinks'),
         ],[
