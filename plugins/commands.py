@@ -14,7 +14,6 @@ async def start(bot, message):
     if len(message.command) > 1 and message.command[1] == 'subscribe':
         await message.reply(INVITE_MSG)
     else:
-        url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
         buttons = [[
             InlineKeyboardButton('Search Movie 🔎', switch_inline_query_current_chat=''),
             InlineKeyboardButton('Go Inline 🦈', switch_inline_query=''),
