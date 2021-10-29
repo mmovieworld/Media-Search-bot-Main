@@ -24,7 +24,6 @@ async def start(bot, message):
         InlineKeyboardButton('⭕ Our other Services ⭕', url='https://t.me/mmovieworldlinks'),
         ],[
         InlineKeyboardButton('➕Request Movie➕', url='https://t.me/Contact_MMovie_World_Bot'),
-        InlineKeyboardButton('Share Bot ↪', url=url),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(START_MSG, reply_markup=reply_markup)
