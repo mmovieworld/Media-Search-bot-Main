@@ -73,13 +73,10 @@ async def answer(bot, query):
 def get_reply_markup(username, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [[
-        InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
-        InlineKeyboardButton('Share bot', url=url),
+        InlineKeyboardButton('Search again 🔎', switch_inline_query_current_chat=query),
+        InlineKeyboardButton('Share Bot ↪', url=url),
     ],[
-        InlineKeyboardButton('👥Official Group👥', url='https://t.me/mmovie_world_Group'),
-        InlineKeyboardButton('🔗MMovie World Links🔗', url="https://t.me/mmovieworldlinks"),
-    ],[
-        InlineKeyboardButton('➕Request Movie➕', url="https://t.me/Contact_MMovie_World_Bot"),
+        InlineKeyboardButton('Request Movie ➕', url="https://t.me/Contact_MMovie_World_Bot"),
     ]]
     return InlineKeyboardMarkup(buttons)
 
