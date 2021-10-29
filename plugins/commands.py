@@ -14,14 +14,18 @@ async def start(bot, message):
     if len(message.command) > 1 and message.command[1] == 'subscribe':
         await message.reply(INVITE_MSG)
     else:
+        url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
         buttons = [[
-            InlineKeyboardButton('Search Here', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Go Inline', switch_inline_query=''),
+            InlineKeyboardButton('Search Movie 🔎', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('Go Inline 🦈', switch_inline_query=''),
         ],[
-        InlineKeyboardButton('👥Official Group👥', url='https://t.me/mmovie_world_Group'),
-        InlineKeyboardButton('🔗MMovie World Links🔗', url='https://t.me/mmovieworldlinks'),
+        InlineKeyboardButton('Join Group 👥', url='https://t.me/mmovie_world_Group'),
+        InlineKeyboardButton('Join Channel 📡 ', url='https://t.me/mmovie_world),
+        ],[
+        InlineKeyboardButton('⭕ Our other Services ⭕', url='https://t.me/mmovieworldlinks'),
         ],[
         InlineKeyboardButton('➕Request Movie➕', url='https://t.me/Contact_MMovie_World_Bot'),
+        InlineKeyboardButton('Share Bot ↪', url=url),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(START_MSG, reply_markup=reply_markup)
