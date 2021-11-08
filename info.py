@@ -36,5 +36,11 @@ Here you can search files in inline mode. Just press following buttons and start
 """
 
 START_MSG = environ.get('START_MSG', default_start_msg)
-SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
+SHARE_BUTTON_TEXT = 'ഹലോ 🙌, @MMovie_World ൻ്റെ സിനിമാ സെർച്ച് ബോട്ട് വന്നിട്ടുണ്ട് ഈ ചാറ്റ് ബോട്ടിൽ Malayalam, Tamil, Hindi, Telugu, foreign Language എന്നീ ഭാഷകളിലെ സിനിമകളും സീരിയലുകളും ലഭ്യമാണ്.
+
+കൂടുതല്‍ അറിയാന്‍ @MMW_Search_Bot ൽ ചെന്ന് START കൊടുത്തതിന് ശേഷം /help എന്ന് അയക്കുക ➡️
+
+Hello 🙌, @MMovie_World 's search bot is now available. On this chat bot you can find Malayalam, Tamil, Hindi, Telugu, foreign Languages Movies and Series.
+
+For more details Got to @MMW_Search_Bot and Click START and type /help ➡️'
 INVITE_MSG = environ.get('INVITE_MSG', 'Please join @.... to use this bot')
